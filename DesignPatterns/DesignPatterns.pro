@@ -6,5 +6,6 @@ SUBDIRS += \
     00_test \
     03-ObserverPattern \
     04_AbstractParents \
-    05-DecoratorPattern
+    05-DecoratorPattern \
+    06-CommandPattern
 

@@ -2,6 +2,7 @@
 #include "subject.h"
 #include "weatherdata.h"
 #include "currentconditiondisplay.h"
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
