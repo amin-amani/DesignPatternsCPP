@@ -7,5 +7,6 @@ SUBDIRS += \
     03-ObserverPattern \
     04_AbstractParents \
     05-DecoratorPattern \
-    06-CommandPattern
+    06-CommandPattern \
+    07-MVC
 

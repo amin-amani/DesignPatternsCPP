@@ -15,12 +15,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        main.cpp \
-    dock.cpp \
-    rubberdock.cpp \
-    malarddock.cpp \
-    flyable.cpp \
-    quackable.cpp
+        main.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -28,8 +23,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    dock.h \
-    rubberdock.h \
-    malarddock.h \
-    flyable.h \
-    quackable.h
+
