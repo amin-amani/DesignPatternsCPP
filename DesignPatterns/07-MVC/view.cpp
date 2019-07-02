@@ -1,17 +1,21 @@
 #include "view.h"
 #include "ui_view.h"
 
-View::View(ModelInterface *model,QWidget *parent) :
+View::View(ModelInterface *model,ControllerInterface *controller,QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::View)
 {
     ui->setupUi(this);
     _model=model;
+    _controller=controller;
+    model->RegisterObserver((PlayerObserver*)this);
+
 }
 
 void View::Update()
 {
-qDebug()<<"update UI";
+//qDebug()<<"update UI";
+    ui->LabTime->setText(QString::number( _controller->GetVolume()));
 }
 
 View::~View()
@@ -22,4 +26,5 @@ View::~View()
 void View::on_BtnStart_clicked()
 {
 _controller->Start();
+
 }

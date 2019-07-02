@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QtDebug>
-#include "playerobserver.h"
 #include "modelinterface.h"
 #include "controllerinterface.h"
 
@@ -17,7 +16,7 @@ class View : public QMainWindow,PlayerObserver
 ModelInterface *_model;
 ControllerInterface *_controller;
 public:
-    explicit View(ModelInterface *model, QWidget *parent = nullptr);
+    explicit View(ModelInterface *model,ControllerInterface *controller, QWidget *parent = nullptr);
 void Update();
     ~View();
 

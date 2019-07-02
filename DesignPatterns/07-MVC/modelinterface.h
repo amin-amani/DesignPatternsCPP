@@ -13,8 +13,8 @@ public:
     virtual void SetVolume(int volume)=0;
     virtual int GetVolume()=0;
     //virtual ~ModelInterface()=0;
-    virtual void RegisterObserver(PlayerObserver &observer)=0;
-    virtual void RemoveObserver(PlayerObserver &observer)=0;
+    virtual void RegisterObserver(PlayerObserver *observer)=0;
+    virtual void RemoveObserver(PlayerObserver *observer)=0;
 
 
 };
