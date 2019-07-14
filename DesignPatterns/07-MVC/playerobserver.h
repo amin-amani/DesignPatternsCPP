@@ -8,6 +8,7 @@ class PlayerObserver
 public:
    //Observer();
    virtual void Update()=0;
+    virtual void PlaybackFinished()=0;
    virtual ~PlayerObserver() = default;
 
 };

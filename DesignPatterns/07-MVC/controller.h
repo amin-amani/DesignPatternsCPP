@@ -10,8 +10,6 @@ class Controller:public ControllerInterface
 View *view;
 ModelInterface *_model;
 public:
-
-
     Controller(ModelInterface *model);
       void SetVolume(int volume);
        int GetVolume();

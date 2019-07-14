@@ -28,7 +28,9 @@ void Model::SetVolume(int volume)
 
 int Model::GetVolume()
 {
+    _observerList[0]->PlaybackFinished();
     return  100;
+
 }
 void Model::NotifyObservers()
 {

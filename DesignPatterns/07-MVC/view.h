@@ -18,6 +18,7 @@ ControllerInterface *_controller;
 public:
     explicit View(ModelInterface *model,ControllerInterface *controller, QWidget *parent = nullptr);
 void Update();
+void PlaybackFinished();
     ~View();
 
 private slots:

@@ -6,7 +6,7 @@
 class ModelInterface
 {
 public:
-    ModelInterface();
+
     virtual void Init()=0;
     virtual void On()=0;
     virtual void Off()=0;

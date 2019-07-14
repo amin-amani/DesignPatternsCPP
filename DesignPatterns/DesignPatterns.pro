@@ -8,5 +8,6 @@ SUBDIRS += \
     04_AbstractParents \
     05-DecoratorPattern \
     06-CommandPattern \
-    07-MVC
+    07-MVC \
+    8-SingleTone
 

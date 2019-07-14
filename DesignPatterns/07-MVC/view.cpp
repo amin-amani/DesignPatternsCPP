@@ -18,6 +18,11 @@ void View::Update()
     ui->LabTime->setText(QString::number( _controller->GetVolume()));
 }
 
+void View::PlaybackFinished()
+{
+    ui->statusBar->showMessage("playback finished");
+}
+
 View::~View()
 {
     delete ui;
