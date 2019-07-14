@@ -9,8 +9,8 @@ int main(int argc, char *argv[])
     RemoteControl *remote=new RemoteControl();
     Light *light=new Light();
 
-    LightOnCommand *lightOnCommand=new LightOnCommand();
-    LightOffCommand *lightOffCommand=new LightOffCommand();
+    LightOnCommand *lightOnCommand=new LightOnCommand(light);
+    LightOffCommand *lightOffCommand=new LightOffCommand(light);
 
 remote->SetCommand(lightOnCommand);
 remote->ButtonPushed();

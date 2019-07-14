@@ -1,11 +1,11 @@
 #include "lightoffcommand.h"
 
-LightOffCommand::LightOffCommand()
+LightOffCommand::LightOffCommand(Light *light)
 {
-
+_light=light;
 }
 
 void LightOffCommand::Execute()
 {
-light->Off();
+_light->Off();
 }

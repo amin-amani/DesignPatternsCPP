@@ -8,10 +8,10 @@
 class LightOffCommand : public Command
 {
 private:
-    Light *light;
+    Light *_light;
 
 public:
-    LightOffCommand();
+    LightOffCommand(Light*light);
     void Execute();
 };
 

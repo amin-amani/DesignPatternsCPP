@@ -7,10 +7,10 @@
 class LightOnCommand : public Command
 {
 private:
-    Light *light;
+    Light *_light;
 public:
 
-    LightOnCommand();
+    LightOnCommand(Light*light);
     void Execute();
 };
 

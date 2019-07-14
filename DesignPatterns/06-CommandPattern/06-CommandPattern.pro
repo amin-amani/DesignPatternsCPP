@@ -16,7 +16,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    command.cpp \
     lightoncommand.cpp \
     lightoffcommand.cpp \
     light.cpp \

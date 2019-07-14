@@ -1,11 +1,11 @@
 #include "lightoncommand.h"
 
-LightOnCommand::LightOnCommand()
+LightOnCommand::LightOnCommand(Light *light)
 {
-
+_light=light;
 }
 
 void LightOnCommand::Execute()
 {
-light->On();
+_light->On();
 }
