@@ -46,6 +46,6 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
     LogInit(a);
     qDebug()<<"hooooo";
-    qDebug()<<Clac::Mul2(4);
+    qDebug()<<Calc::Mul2(4);
     return a.exec();
 }
