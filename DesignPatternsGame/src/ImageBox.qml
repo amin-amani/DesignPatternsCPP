@@ -8,7 +8,15 @@ Rectangle
     property bool flipped:false
     property  string frontImage: ""
     property  string backImage: ""
+     property  string pattern: ""
 //    anchors.fill: parent
+    Text {
+
+        z:2
+        id: name
+        font.pointSize: 20
+        text: (imageComponent.flipped)?pattern:" "
+    }
         Flipable
         {
             id:flipable
@@ -46,6 +54,7 @@ Rectangle
             transitions: Transition {
                 NumberAnimation { target: rotation; property: "angle"; duration: 200 }
             }
+
             MouseArea {
                 anchors.fill: parent
                 onClicked: imageComponent.flipped = !imageComponent.flipped

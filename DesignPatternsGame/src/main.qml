@@ -63,6 +63,7 @@ Rectangle {
                   ImageBox {
                       frontImage: "images/NoText/"+modelData+".PNG"
                       backImage: "images/CompleteDiagrams/"+modelData+".PNG"
+                      pattern:qsTr(modelData)
 
                   }
      //             onModelChanged: {
