@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.5)
+project(qmlTemplate LANGUAGES CXX)
+set_property(GLOBAL PROPERTY CmakeParentDirectory "${CMAKE_CURRENT_LIST_DIR}")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -pthread")
+set(SRC_DIRECTORY ${PROJECT_SOURCE_DIR})
+add_subdirectory(src)
