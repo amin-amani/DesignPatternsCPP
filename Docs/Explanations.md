@@ -24,7 +24,7 @@
 
 > it defines a one-to-many dependency between objects so that when one object changes state, all of its dependants get notified and updated automatically. (publisher-subscriber or subject-observer)
 
-![](https://github.com/davood-dorostkar/DesignPatterns/blob/main/Patterns/Observer/docs/observer.jpg)
+![](/Catalog/Observer/real1/docs/observer.jpg)
 
 - it is common for the subject to push its data, but this design can be implemented such that the observers pull their needed data.
 
@@ -32,7 +32,7 @@
 
 > it defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory method lets a class defer its instantiation to subclasses.
 
-![](https://github.com/davood-dorostkar/DesignPatterns/blob/main/Patterns/Factory/Hard/docs/factory.jpg)
+![](/Catalog/Factory/real1/docs/factory.jpg)
 
 - a factory method handles object creation and encapsulates it in a subclass. This decouples the client code in the superclass from the object creation in the subclass.
 
@@ -48,7 +48,7 @@
 
 > it provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
-![](https://github.com/davood-dorostkar/DesignPatterns/blob/main/Patterns/AbstractFactory/docs/abstractFactory.jpg)
+![](/Catalog/AbstractFactory/real1/docs/abstractFactory.jpg)
 
 ### Structure:
 
@@ -130,7 +130,7 @@
 
 > It allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
 
-![](https://github.com/davood-dorostkar/DesignPatterns/blob/main/Patterns/State/docs/state.jpg)
+![](/Catalog/State/real1/docs/state.jpg)
 
 - Think of it as an alternative to putting lots of conditionals in your context(main app); by encapsulating the behaviors within state objects, you can simply change the state object in context to change its behavior.
 
@@ -138,7 +138,7 @@
 
 > Represent an operation to be performed on the elements of an object structure. visitor lets you define a new operation without changing the classes of the elements on which it operates.
 
-![](https://github.com/davood-dorostkar/DesignPatterns/blob/main/Patterns/Visitor/docs/visitor.jpg)
+![](/Catalog/Visitor/real1/docs/visitor.jpg)
 
 - Consider there are several pre-implemented classes. now you want to get some data from those classes with least code change. you make them inherit from a new interface class. the interface has a method called `acceptVisitor`. we define another interface called `visitor`. every kind of visitors that you define, inherit from this class. in the acceptVisitor method, you implement the execution of the appropriate visitor method. at last you pass a concrete visitor to the class's accept method.
 
@@ -146,7 +146,7 @@
 
 > Decouples an abstraction from its implementation so that the two can vary independently
 
-![](https://github.com/davood-dorostkar/DesignPatterns/blob/main/Patterns/Bridge/docs/bridge.jpg)
+![](/Catalog/Bridge/real1/docs/bridge.jpg)
 
 - It is similar to an extended version of strategy. the idea is that we have an abstraction class that handles the high level policy. there are some classes inheriting this abstract class (means that it has virtual methods). the abstract also delegates the implementation of one of its features to an interface class (the implementor). it is the base class for different implementations of that feature.
 
@@ -154,7 +154,7 @@
 
 > It provides a surrogate or placeholder for another object to control access to it.
 
-![](https://github.com/davood-dorostkar/DesignPatterns/blob/main/Patterns/Proxy/docs/proxy.jpg)
+![](/Catalog/Proxy/real1/docs/proxy.jpg)
 
 - The proxy class and service class must be inherited from a common interface.
 - The client code instantiates the proxy of type Proxy (`Proxy* proxy = new Proxy`), not the type of the interface.
@@ -170,7 +170,7 @@
 
 > Specify the kind of objects to create using a prototypical instance, and create new objects by copying this prototype
 
-![](https://github.com/davood-dorostkar/DesignPatterns/blob/main/Patterns/Prototype/docs/prototype.jpg)
+![](/Catalog/Prototype/real1/docs/prototype.jpg)
 
 - concrete objects inherit a prototype interface and must implement a `clone` method
 - The clone method returns a copy of its object with all data and memebers
