@@ -11,7 +11,7 @@
 
 > It defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
-![](Catalog/Strategy/real1/docs/ClassDiagram.jpg)
+![](/Catalog/Strategy/real1/docs/ClassDiagram.jpg)
 
 - It delegates the implementation of a feature to a family of classes using an interface
 - It separates the high-level policy from low-level implementation.
