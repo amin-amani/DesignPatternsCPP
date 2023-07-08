@@ -1,8 +1,5 @@
-# DesignPatternsCPP
-C++ design patterns example
+# Design Patterns
 
-### Proxy:
-![alt text](https://github.com/amin-amani/DesignPatternsCPP/blob/main/uml/Proxy.png)
+** An Implementation of Design Patterns in C++ **
 
-
-
+[Brief Tutorial](/Docs/Explanations.md)
