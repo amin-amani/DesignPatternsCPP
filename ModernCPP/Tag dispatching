@@ -1,0 +1,28 @@
+#include <iostream>
+#include <type_traits>
+using namespace std;
+
+
+
+template <typename T>
+void printval(const T& num,true_type)
+{
+    std::cout<<"print_float template:"<<num<<std::endl;
+
+}
+template <typename T>
+void printval(const T& num,false_type)
+{
+ std::cout<<"print_other template:"<<num<<std::endl;
+}
+template <typename T>
+void printval(const T& num)
+{
+    std::cout<<"general template:"<<num<<std::endl;
+    return printval(num,conditional_t<is_floating_point<T>::value,true_type,false_type>{});
+}
+int main()
+{
+printval(1.0f);
+    return 0;
+}
