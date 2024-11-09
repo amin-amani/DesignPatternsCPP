@@ -1,5 +1,9 @@
-download code mate from `https://github.com/adamtornhill/code-maat`  
+download code mate from  `https://github.com/adamtornhill/code-maat` 
 
+download scripts:
+```
+https://github.com/adamtornhill/maat-scripts.git
+```
 # clone test brepository and limit analys date
 ```
 git clone https://github.com/hibernate/hibernate-orm.git
