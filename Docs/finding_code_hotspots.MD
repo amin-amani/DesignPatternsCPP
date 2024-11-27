@@ -18,6 +18,9 @@ git log --pretty=format:'[%h] %an %ad %s' --date=short \
 ```
 maat -l hib_evo.log -c git -a revisions > maat_freqs.csv
 cloc ./ --by-file --csv --quiet --report-file=maat_lines.csv
+python3 ../maat-scripts/transform/csv_as_enclosure_json.py --structure ./maat_lines.csv --weights maat_fre
+qs.csv > output.csv
+
 ```
 
 
