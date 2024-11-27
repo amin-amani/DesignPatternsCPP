@@ -16,7 +16,8 @@ git log --pretty=format:'[%h] %an %ad %s' --date=short \
 --numstat --before=2013-09-05 --after=2012-01-01 > hib_evo.log
 ```
 ```
- maat -l hib_evo.log -c git -a revisions > maat_freqs.csv
+maat -l hib_evo.log -c git -a revisions > maat_freqs.csv
+cloc ./ --by-file --csv --quiet --report-file=maat_lines.csv
 ```
 
 
