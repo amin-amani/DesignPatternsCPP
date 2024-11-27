@@ -15,6 +15,9 @@ git checkout $(git rev-list -n 1 --before="2013-09-05" main)
 git log --pretty=format:'[%h] %an %ad %s' --date=short \
 --numstat --before=2013-09-05 --after=2012-01-01 > hib_evo.log
 ```
-maat -l maat_evo.log -c git -a revisions > maat_freqs.csv
+```
+ maat -l hib_evo.log -c git -a revisions > maat_freqs.csv
+```
+
 
  python3 -m http.server 8888
