@@ -1,5 +1,5 @@
 
-Why Use This Instead of #ifdef?
+Why Use This Instead of #ifdef?  
 ✅ Works in both #if expressions and normal macro expansions  
 ✅ Safer than #ifdef because it avoids issues with undefined macros  
 ✅ Can be used inside expressions (if (__is_defined(CONFIG_BOOGER)))  
